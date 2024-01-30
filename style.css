@@ -1,0 +1,196 @@
+.image_logo {
+  padding: 80px;
+  gap: 10px;
+}
+.image_logo img {
+  width: 200px;
+}
+.powering {
+  padding: 30px 60px;
+}
+.powering h1 {
+  font-weight: 400px;
+}
+.topic {
+  margin: 20px 60px;
+  border: 2px solid rgb(212, 211, 211);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.topic ul {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  font-size: 18px;
+  padding-left: 0px;
+}
+.topic ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+/* TO PLACE ACTIVE LINE UNDER THE TOPICS */
+.topic ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  width: 120%;
+  height: 3px;
+  background-color: black;
+}
+/* ANIMATION TRANSITION TO MAKE THE ACTIVE LINE TRANSFORM */
+.topic ul li a::before {
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+.topic ul li a:hover::before {
+  transform: scale(1, 1);
+}
+.topic ul li a:hover {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.digital_payment {
+  margin-left: 60px;
+}
+.digital_payment a {
+  color: red;
+  font-size: 20px;
+}
+.Leading_stats {
+  background-color: aliceblue;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+.Leading_stats h1 {
+  font-weight: bold;
+}
+.Leading_stats h2 {
+  font-size: 50px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.Leading_stats p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: gray;
+}
+.Gt_payment {
+  margin-top: 4.5rem;
+}
+.Gt_payment p {
+  margin-top: 2.5rem;
+}
+#features h2 {
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+.circle {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Schedule {
+  background-image: linear-gradient(
+    to right,
+    rgb(233, 132, 83),
+    rgb(180, 82, 119)
+  );
+  margin-top: 60px;
+  padding: 60px 60px;
+}
+.Schedule #inner_box {
+  background-image: linear-gradient(
+    to right,
+    rgb(201, 115, 72),
+    rgb(154, 70, 102)
+  );
+
+  padding: 20px 60px;
+}
+.Schedule button {
+  background-color: rgb(45, 45, 72);
+  color: white;
+  font-size: 20px;
+}
+.Schedule button:hover {
+  background-color: white;
+  color: black;
+}
+.testimony {
+  background-color: rgb(45, 45, 72);
+}
+.testimony_c {
+  font-size: 20px;
+  line-height: 40px;
+}
+.testimony_c p {
+  padding-top: 50px;
+}
+.testimony_c #ceo h6 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.testimony_c #ceo #line {
+  border-right: 3px solid white;
+  padding-right: 20px;
+}
+/* .cus_solution {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.cus_solution a {
+  color: red;
+  font-size: 20px;
+}
+.cus_solution h3 {
+  font-weight: bold;
+}
+.cus_solution p {
+  margin-top: 20px;
+  font-size: 18px;
+} */
+
+.pay_solution a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.innovations {
+  margin: 100px 70px;
+}
+
+.innovations p {
+  font-size: 18px;
+  /* font-weight: bold; */
+  margin-top: 20px;
+  font-family: "Roboto", Arial, Arial;
+}
+.innovations h1 {
+  font-weight: bold;
+  font-family: "Poppins", Arial, Arial;
+}
+
+.card_solution a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+/* need to apply this hover to each of the card not the whole card conatiner */
+/* .card_solution:hover {
+  background-image: url(./asset/company_logo.webp);
+} */
