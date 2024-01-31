@@ -3,7 +3,7 @@
   gap: 10px;
 }
 .image_logo img {
-  width: 200px;
+  width: 160px;
 }
 .powering {
   padding: 30px 60px;
@@ -17,10 +17,12 @@
   border-left: none;
   border-right: none;
   border-top: none;
+  width: 90%;
 }
 .topic ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   gap: 30px;
   font-size: 18px;
@@ -64,6 +66,7 @@
   background-color: aliceblue;
   padding-top: 5.5rem;
   padding-bottom: 5.5rem;
+  text-align: center;
 }
 .Leading_stats h1 {
   font-weight: bold;

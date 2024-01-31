@@ -161,7 +161,9 @@
           </ul>
         </div>
       </div>
-      <div style="display: flex; gap: 20px">
+      <!-- This section get hidden when viewed on small screen #d-none set the display to hidden 
+        while d-lg-flex display it on large screen  code line 166-189 -->
+      <div class="d-none d-lg-flex" style="display: flex; gap: 20px">
         <div style="display: flex; align-items: center">
           <i class="fa-solid fa-magnifying-glass text-light"></i>
         </div>
@@ -186,15 +188,15 @@
         </button>
       </div>
     </nav>
+    <!-- HERO SECTION -->
     <div
-      class="container-fulid"
-      style="display: flex; background-color: rgb(45, 45, 72)"
+      class="container-fulid d-md-flex d-xs-block"
+      style="background-color: rgb(45, 45, 72); padding-top: 160px"
     >
-      <div class="hero" style="height: 120vh; color: white">
+      <div class="hero" style="height: 80vh; color: white">
         <h1
           style="
             padding-left: 60px;
-            padding-top: 180px;
             font-size: 45px;
             font-weight: bolder;
             line-height: 60px;
@@ -226,22 +228,17 @@
       </div>
       <div>
         <img
-          style="
-            width: 50vw;
-            height: 600px;
-            padding-top: 160px;
-            padding-left: 30px;
-          "
+          style="width: 50vw; height: 400px; padding-left: 30px"
           src="./asset/hero_picture.webp"
-          alt=""
+          alt="Hero Picture"
         />
       </div>
     </div>
-    <div class="container-fulid">
-      <div
-        style="background-color: rgb(241, 247, 250)"
-        class="d-flex image_logo"
-      >
+    <div
+      class="container-fulid d-flex justify-content-center"
+      style="background-color: rgb(241, 247, 250)"
+    >
+      <div class="d-flex flex-wrap image_logo">
         <img src="./asset/gasbuddy-logo.svg" alt="gasbuddy-logo" />
         <img src="./asset/goat-logo.svg" alt="goat-logo" />
         <img src="./asset/ibotta-logo.svg" alt="ibotta-logo" />
@@ -252,7 +249,7 @@
     </div>
 
     <div class="powering"><h1>Powering Payments for Every Industry</h1></div>
-    <div class="topic">
+    <div class="topic d-flex flex-wrap">
       <ul>
         <li><a href="#" class="active">Insurance</a></li>
         <li><a href="#">Lending</a></li>
@@ -261,7 +258,7 @@
         <li><a href="#">manufacturing</a></li>
       </ul>
     </div>
-    <div class="d-flex">
+    <div class="d-flex flex-wrap">
       <div class="digital_payment">
         <h3>Digital Payments for the Insurance Industry</h3>
         <p style="margin-top: 20px">
@@ -271,9 +268,11 @@
           payment<br />
           predictability, payment security and policyholder experience.
         </p>
-        <h4><a href="#">Learn More</a></h4>
+        <h4>
+          <a href="#"><i class="fa-solid fa-arrow-right"></i>Learn More</a>
+        </h4>
       </div>
-      <div>
+      <div class="">
         <img
           style="width: 45vw"
           src="./asset/homepage_industry_healthcare@2x.webp"
@@ -281,9 +280,13 @@
         />
       </div>
     </div>
-    <div class="text-center Leading_stats mb-4">
+
+    <!-- LEADING STAT -->
+    <div class="container-fluid row Leading_stats mb-4">
       <h1>Leading Open Banking in North America</h1>
-      <div class="d-flex justify-content-around align-items-center text-center">
+      <div
+        class="d-flex flex-wrap d-xs-block justify-content-around align-items-center text-center"
+      >
         <div>
           <h2>40+</h2>
           <p>Partners</p>
@@ -302,7 +305,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Your Go-To Payments Partner SECTION -->
     <div class="text-center mt-5 mb-5">
       <h1 class="pt-3">Your Go-To Payments Partner</h1>
       <p class="pt-4">
@@ -311,7 +314,9 @@
       </p>
     </div>
 
-    <div class="container d-flex row-cols-1 row-cols-md-4 g-4 border-none pt-4">
+    <div
+      class="container flex-wrap d-md-flex d-xs-block row-cols-1 row-cols-md-4 g-4 border-none pt-4"
+    >
       <div class="col">
         <div class="card h-100 border-0">
           <div class="d-flex justify-content-center">
@@ -403,6 +408,7 @@
         </div>
       </div>
     </div>
+
     <!-- <div>
       <div class="container-fulid d-flex mt-5 pt-5">
         <div class="cus_solution pt-5">
@@ -477,10 +483,11 @@
         </div>
       </div>
     </div> -->
+
     <div class="container-fulid pay_solution">
       <div class="card mb-3 border-0" style="margin: 60px 60px">
-        <div class="row g-0">
-          <div class="col-7">
+        <div class="row g-0 d-lg-flex d-xs-block">
+          <div class="col-lg-7 col-xs-12">
             <div class="card-body">
               <div class="card-text" style="font-size: 20px">
                 <h3>Customizable Solutions</h3>
@@ -530,7 +537,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 col-xs-12">
             <img
               src="./asset/homepage_customizable_block@2x.webp"
               alt="cutomizable block"
@@ -543,14 +550,14 @@
     <div class="container-fulid pay_solution">
       <div class="card mb-3 border-0" style="margin: 60px 60px">
         <div class="row g-0">
-          <div class="col-5">
+          <div class="col-lg-5 col-xs-12">
             <img
               src="./asset/homepage_real-time-payments_block@2x-2.webp"
               alt="cutomizable block"
               style="width: 400px; height: 380px"
             />
           </div>
-          <div class="col-7">
+          <div class="col-lg-7 col-xs-12">
             <div class="card-body">
               <div class="card-text" style="font-size: 20px">
                 <h3>Customizable Solutions</h3>
@@ -603,7 +610,7 @@
     <div class="container-fulid pay_solution">
       <div class="card mb-3 border-0" style="margin: 60px 60px">
         <div class="row g-0">
-          <div class="col-7">
+          <div class="col-lg-7 col-xs-12">
             <div class="card-body">
               <div class="card-text" style="font-size: 18px">
                 <h3>Secure Exchange Solution</h3>
@@ -651,7 +658,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 col-xs-12">
             <img
               src="./asset/homepage_secure-exchange-block@2x.webp"
               alt="cutomizable block"
@@ -667,22 +674,23 @@
       style="background-color: rgb(241, 247, 250)"
     >
       <h1>Dwolla Partners</h1>
-      <div class="d-flex image_logo text-center">
-        <img src="./asset/gasbuddy-logo.svg" alt="gasbuddy-logo" />
-        <img src="./asset/goat-logo.svg" alt="goat-logo" />
-        <img src="./asset/ibotta-logo.svg" alt="ibotta-logo" />
-        <img src="./asset/masterworks-logo.svg" alt="masterworks-logo" />
-        <img src="./asset/mx-logo.svg" alt="mx-logo" />
-        <img src="./asset/routable-logo.svg" alt="routable-logo" />
+      <div class="image_logo d-lg-flex flex-wrap text-center">
+        <img src="./asset/sift.svg" alt="gasbuddy-logo" />
+        <img src="./asset/plaid.svg" alt="goat-logo" />
+        <img src="./asset/MX.svg" alt="ibotta-logo" />
+        <img src="./asset/nacha.svg" alt="masterworks-logo" />
+        <img src="./asset/fincity.svg" alt="mx-logo" />
       </div>
     </div>
-    <div class="container mt-5">
+    <div class="container-fulid mt-5">
+      <!-- The container-fluid section made page scroll horizontal-->
       <h1>
         Dwolla Connect: Empowering Businesses to Automate and<br />Optimize
         Their Payment Operations
       </h1>
-      <div class="embed-responsive embed-responsive-16by9">
-        <video class="embed-responsive-item" width="1120" height="720" controls>
+      <div class="col-12 embed-responsive embed-responsive-16by9 p-3 mt-5">
+        <!-- width="1120" height="720" -->
+        <video class="embed-responsive-item col-12" controls>
           <source src="./asset/my_video.mp4" type="video/mp4" />
         </video>
       </div>
@@ -709,10 +717,11 @@
         uncover solutions using<br />account-to-account payment technology.
       </p>
     </div>
+    <!-- CARD PAYMENT NEW UPDATE  -->
     <div class="container">
       <div class="card-group card_solution" style="gap: 3rem">
         <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+          <img src="./asset/card1.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">
               <small class="text-body-secondary">2 min read</small>
@@ -737,7 +746,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+          <img src="./asset/card2.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">
               <small class="text-body-secondary">13 min read</small>
@@ -763,7 +772,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+          <img src="./asset/card3.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">
               <small class="text-body-secondary">1 min read</small>
@@ -799,8 +808,8 @@
       src="https://kit.fontawesome.com/30a998bc39.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
   </body>
 </html>
